@@ -1,21 +1,22 @@
-const botoes = document.querySelectorAll(".trailer-button");
-const modal = document.querySelector(".modal");
-const closeModalButton = document.querySelector(".close-modal");
-const video = document.getElementById("video");
-
-const menuItems = document.querySelectorAll('.menu a');
-
 window.onload = function () {
-    fetch('localhost:8080/gedaiflix-api/cards')
+    fetch('https://projeto-treinamento-web-production.up.railway.app/gedaiflix-api/cards', { mode: 'no-cors' })
         .then(async (data) => {
+            console.log(data);
             const response = await data.json();
-            console.log({response});  
+            console.log({ response });
         })
         .catch((error) => {
             console.log(error)
             alert('error ao retornar dados.')
         })
 }
+
+const botoes = document.querySelectorAll(".trailer-button");
+const modal = document.querySelector(".modal");
+const closeModalButton = document.querySelector(".close-modal");
+const video = document.getElementById("video");
+
+const menuItems = document.querySelectorAll('.menu a');
 
 /**
  * Smooth scroll animation
