@@ -70,6 +70,10 @@
         gap: 10px;
     }
 
+    .title-container .description {
+        margin-left: 10px;
+    }
+
     .title-container .intro-image {
         max-width: 75%;
     }
