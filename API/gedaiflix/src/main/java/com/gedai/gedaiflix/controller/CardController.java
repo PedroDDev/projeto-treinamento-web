@@ -1,7 +1,10 @@
 package com.gedai.gedaiflix.controller;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -29,9 +32,13 @@ public class CardController {
 
         result = cardRepository.findAll();
 
+        List<Card> sortedResult = result.stream()
+                .sorted(Comparator.comparing(Card::getId))
+                .collect(Collectors.toList());
+
         if (result.size() > 0)
-            return new ResponseEntity<List<Card>>(result, HttpStatus.OK);
-            
-        return new ResponseEntity<List<Card>>(result, HttpStatus.INTERNAL_SERVER_ERROR);
+            return new ResponseEntity<List<Card>>(sortedResult, HttpStatus.OK);
+
+        return new ResponseEntity<List<Card>>(sortedResult, HttpStatus.INTERNAL_SERVER_ERROR);
     }
 }
