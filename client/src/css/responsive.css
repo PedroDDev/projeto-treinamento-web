@@ -87,10 +87,6 @@
         width: 300px;
         height: 169px;
     }
-
-    .card {
-        margin-left: 45px;
-    }
 }
 
 @media (max-width: 376px){
