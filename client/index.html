@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
 
     <title>GEDAIFLIX</title>
 </head>
@@ -24,7 +25,6 @@
             <source src="./assets/video/background-video.mp4" type="video/mp4" />
         </video>
     </div>
-
     <header class="header">
         <a>
             <img class="logo" src="./assets/img/logo.png" alt="GEDAIFLIX logo" />
@@ -35,35 +35,36 @@
             </ul>
         </nav>
     </header>
-
-    <div class="title-container">
-        <div class="introduction">
-            <p class="description">
-                Bem-vindo ao GEDAIFLIX - o destino perfeito para todos os fãs de Star Wars! Aqui, você pode encontrar
-                trailers de todos os filmes da franquia principal, desde os clássicos originais até as mais recentes
-                aventuras no universo desta magnífica saga. Explore nosso catálogo para encontrar previews
-                emocionantes, sinopses
-                detalhadas e muito mais. Junte-se a nós e embarque em uma jornada épica pela galáxia distante de Star
-                Wars.
-            </p>
-        </div>
-        <img class="intro-image" src="./assets/img/page-image.png" />
-    </div>
-
-    <section id="catalog" class="episodes-title">
-        <hr />
-        <span>Catálogo</span>
-    </section>
-
-    <div class="episodes-container">
-        <div class="modal">
-            <div class="modal-content">
-                <span class="close-modal">X</span>
-                <iframe id="video" width="560" height="315" src=""
-                    title="Episode I trailer" frameborder="1"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+    <section>
+        <div class="title-container">
+            <div class="introduction">
+                <p class="description">
+                    Bem-vindo ao GEDAIFLIX - o destino perfeito para todos os fãs de Star Wars! Aqui, você pode
+                    encontrar
+                    trailers de todos os filmes da franquia principal, desde os clássicos originais até as mais recentes
+                    aventuras no universo desta magnífica saga. Explore nosso catálogo para encontrar previews
+                    emocionantes, sinopses
+                    detalhadas e muito mais. Junte-se a nós e embarque em uma jornada épica pela galáxia distante de
+                    Star
+                    Wars.
+                </p>
             </div>
+            <img class="intro-image" src="./assets/img/page-image.png" />
+        </div>
+    </section>
+    <section>
+        <div id="catalog" class="episodes-title">
+            <hr />
+            <span>Catálogo</span>
+        </div>
+        <div class="episodes-container"></div>
+    </section>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close-modal">X</span>
+            <iframe id="video" width="560" height="315" src="" title="Episode I trailer" frameborder="1"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
     </div>
 </body>
