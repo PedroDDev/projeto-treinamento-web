@@ -76,6 +76,7 @@
 
     .title-container .intro-image {
         max-width: 75%;
+        margin-left: 20px;
     }
 
     .modal .close-modal {
