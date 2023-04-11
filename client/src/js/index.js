@@ -110,14 +110,14 @@ window.onload = function () {
             function scrollToSection(event) {
                 event.preventDefault();
                 const element = event.target.getAttribute('href');
-                const section = document.querySelector(element).offsetTop - 40;
+                const section = document.querySelector(element).offsetTop - 50;
 
                 window.scroll({
                     top: section,
                     behavior: "smooth",
                 })
 
-                // smoothScrollTo(0, section, 700);
+                // smoothScrollTo(0, section, 1000);
             }
 
             menuItems.forEach(item => {

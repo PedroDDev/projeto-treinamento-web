@@ -1,7 +1,7 @@
 body {
     font-family: 'Poppins';
     overflow-x: hidden;
-    background-color: #262b35;
+    background: #000000;
 }
 
 /*Esconder a barra de rolagem lateral sem desativar o scroll da pagina*/
@@ -41,7 +41,7 @@ body {
 }
 
 .background-video {
-    background-color: red;
+    background-color: #262b35;
     position: absolute;
     z-index: -1;
     width: 100vw;
@@ -57,13 +57,13 @@ body {
 
 .background-video::after {
     content: "";
-    background-color: #d5011b;
+    background-color: #262b35;
     width: 100vw;
     height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(0, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 1) 100%);
 }
 
 .title-container {
@@ -71,8 +71,12 @@ body {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    height: calc(100vh - 132px);
+    height: calc(100vh - 125px);
     padding: 0 30px 30px;
+}
+
+.title-container .intro-title-image {
+    max-width: 500px;
 }
 
 .title-container .description {
@@ -86,15 +90,20 @@ body {
     width: 500px;
 }
 
+.episode-section{
+    background: linear-gradient(0deg, rgba(38,43,48,1) 60%, rgba(0,0,0,1) 100%);
+}
+
 .episodes-title {
     text-align: center;
-    margin: 50px auto;
+    margin-bottom: 120px;
+    margin-top: 10px;
     position: relative;
 }
 
 .episodes-title hr {
     border: none;
-    border-top: 1px solid #34383f;
+    border-top: 1px solid #2e2c2c;
     margin: 0;
 }
 
@@ -103,10 +112,11 @@ body {
     top: -20px;
     font-size: 25px;
     left: 50%;
-    color: #484d53;
+    color: #2e2c2c;
     transform: translateX(-50%);
-    background-color: #262b35;
-    padding: 0 10px;
+    background-color: #000000;
+    padding: 0 15px;
+
 }
 
 .episodes-container {
@@ -114,7 +124,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: center;
     padding: 0 30px 30px;
     gap: 85px;
 }
@@ -134,7 +144,7 @@ body {
 }
 
 .front {
-    background: red;
+    background: black;
     z-index: 1;
 }
 

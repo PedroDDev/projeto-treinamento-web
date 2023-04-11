@@ -11,7 +11,11 @@
         flex-wrap: wrap;
         justify-content: center;
         height: auto;
-        gap: 30px;
+        gap: 20px;
+    }
+
+    .title-container .intro-title-image{
+        max-width: 50%;
     }
 
     .title-container .intro-image {
@@ -19,15 +23,26 @@
     }
 
     .title-container .description {
-        margin-left: 60px;
         display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .title-container .description {
         color: white;
         text-align: center;
+    }
+
+    .episode-section{
+        background: #262b35;
+    }
+
+    .episodes-title hr {
+        border-top: 1px solid #34383f;
+    }
+
+    .episodes-title span {
+        color: #484d53;
+        background-color: #262b35;    
+    }
+
+    .episodes-container {
+        gap: 115px;
     }
 
     .card {
@@ -70,6 +85,10 @@
         gap: 10px;
     }
 
+    .title-container .intro-title-image{
+        max-width: 75%;
+    }
+
     .title-container .description {
         margin-left: 25px;
     }
@@ -79,6 +98,7 @@
         margin-left: 20px;
     }
 
+    
     .modal .close-modal {
         width: 30px;
         line-height: 30px;
