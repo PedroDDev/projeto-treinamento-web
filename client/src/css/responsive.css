@@ -1,5 +1,12 @@
-@media (max-width: 1200px){
-    body{
+@media (max-width: 1400px) {
+    .title-container .intro-image {
+        max-width: 30%;
+    }
+    
+}
+
+@media (max-width: 1200px) {
+    body {
         background-color: #262b35;
     }
 
@@ -11,10 +18,15 @@
         flex-wrap: wrap;
         justify-content: center;
         height: auto;
-        gap: 20px;
     }
 
-    .title-container .intro-title-image{
+    .title-container .introduction {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-container .intro-title-image {
         max-width: 50%;
     }
 
@@ -28,7 +40,7 @@
         text-align: center;
     }
 
-    .episode-section{
+    .episode-section {
         background: #262b35;
     }
 
@@ -38,7 +50,7 @@
 
     .episodes-title span {
         color: #484d53;
-        background-color: #262b35;    
+        background-color: #262b35;
     }
 
     .episodes-container {
@@ -57,13 +69,13 @@
         font-size: 13px;
         margin: 30px 0;
     }
-    
+
     .back h2 {
         color: #a8adb7;
         width: 100%;
         margin-top: 0;
     }
-    
+
     .back .trailer-button {
         background-color: #ff0021;
         color: white;
@@ -78,41 +90,24 @@
     }
 }
 
-@media (max-width: 500px){
-    .header {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+@media (max-width: 768px) {
+    .modal #video {
+        width: 400px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .modal #video {
+        width: 250px;
+        height: 140px;
     }
 
-    .title-container .intro-title-image{
-        max-width: 75%;
-    }
-
-    .title-container .description {
-        margin-left: 25px;
+    .title-container .intro-title-image {
+        max-width: 60%;
     }
 
     .title-container .intro-image {
         max-width: 75%;
-        margin-left: 20px;
-    }
-
-    
-    .modal .close-modal {
-        width: 30px;
-        line-height: 30px;
-    }
-
-    .modal #video {
-        width: 300px;
-        height: 169px;
-    }
-}
-
-@media (max-width: 376px){
-    .modal #video {
-        width: 250px;
-        height: 140px;
     }
 }
