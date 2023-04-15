@@ -101,6 +101,11 @@
         width: 400px;
         height: 200px;
     }
+
+    .modal .fechar-modal {
+        width: 30px;
+        line-height: 30px;
+    }
 }
 
 @media (max-width: 576px) {
