@@ -91,6 +91,12 @@
 }
 
 @media (max-width: 768px) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    
     .modal #video {
         width: 400px;
         height: 200px;
