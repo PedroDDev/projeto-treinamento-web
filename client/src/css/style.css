@@ -145,7 +145,7 @@ body {
 }
 
 .front {
-    background: black;
+    background: #000000;
     z-index: 1;
 }
 
@@ -155,7 +155,7 @@ body {
 }
 
 .back {
-    background: black;
+    background: #000000;
     transform: rotateY(-180deg);
     backface-visibility: hidden;
     padding: 25px;
@@ -192,21 +192,13 @@ body {
     transform: scale(1.1);
 }
 
-.card:hover .front {
-    transform: rotateY(180deg);
-    z-index: 0;
-}
-
-.card:hover .back {
-    transform: rotateY(0);
-    z-index: 1;
-}
-
+.card:hover .front,
 .card:active .front {
     transform: rotateY(180deg);
     z-index: 0;
 }
 
+.card:hover .back,
 .card:active .back {
     transform: rotateY(0);
     z-index: 1;
